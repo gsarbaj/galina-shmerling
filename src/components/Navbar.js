@@ -1,8 +1,6 @@
-import React, { useState } from "react"
-import logo from "../assets/images/matritsa.png"
+import React from "react"
 import { FaAlignRight } from "react-icons/fa"
-import pageLinks from "../constants/links"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { Link} from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 // const query = graphql`
@@ -54,11 +52,11 @@ const NavData = [
 
 const Navbar = ({toggleSidebar}) => {
 
-  const [activeMenu, setActiveMenu] = useState(false);
+  // const [activeMenu, setActiveMenu] = useState(false);
 
-  const clickHandler = () => {
-    setActiveMenu(!activeMenu)
-  }
+  // const clickHandler = () => {
+  //   setActiveMenu(!activeMenu)
+  // }
 
 
 

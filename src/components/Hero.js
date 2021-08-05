@@ -3,14 +3,13 @@ import { Link } from "gatsby"
 import socialLinks from "../constants/social_links"
 // import heroImg from "../assets/images/hero.svg"
 import { StaticImage } from "gatsby-plugin-image"
-import img from '../assets/images/galina-picture.jpeg'
 
 const Hero = () => {
   return <header className={'hero'}>
     <section className="section-center hero-center">
       <article className="hero-info">
         <div>
-          <div className="underline"></div>
+          <div className="underline"> </div>
           <h1>Школа Галины Шмерлинг</h1>
           <h4>Основатель Школы, целитель, смелый исследователь</h4>
           <Link to={'/contact'} className={'btn'}> Связаться </Link>

@@ -1,6 +1,6 @@
 import React from "react"
 import Title from "./Title"
-import { FaAndroid, FaAngleDoubleRight, FaCode, FaSketch, FaTelegram } from "react-icons/fa"
+import {  FaTelegram } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
