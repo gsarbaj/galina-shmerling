@@ -10,10 +10,12 @@ const ReviewPage = ({data:{allContentfulReview: {nodes: reviews}}}) => {
         <section className={'projects-page'}>
           <div>
             {reviews.map( (review) => {
-              return <div key={review.name}>
+              return <div key={review.name} className="review-item">
                 <h3>{review.name}</h3>
-                <h4>{review.city}</h4>
-                <h4>{review.date.slice(0, -12)}</h4>
+                <div className="review-data">
+                  <h4>{review.city}</h4>
+                  <h4>{review.date.slice(0, -12)}</h4>
+                </div>
                 <p>{review.review.review}</p>
                 <Link to={'/contact'} className={'btn'}>Написать нам</Link>
               </div>

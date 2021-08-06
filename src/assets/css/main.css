@@ -195,11 +195,11 @@ p {
 }
 .social-link {
   font-size: 1.75rem;
-  color: var(--clr-grey-1);
+  color: var(--clr-primary-5);
   transition: var(--transition);
 }
 .social-link:hover {
-  color: var(--clr-primary-5);
+  color: var(--clr-grey-1);
 }
 /*
 =============== 
@@ -245,7 +245,7 @@ Navbar
 .nav-links {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .toggle-btn {
     display: none;
   }
@@ -330,7 +330,7 @@ Sidebar
   color: var(--clr-red-dark);
   cursor: pointer;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .sidebar {
     transform: translateX(-100%);
   }
@@ -588,6 +588,7 @@ Jobs
 }
 .job-info {
   /* min-height: 420px; */
+  padding-top: 10px;
 }
 .job-info h3 {
   font-weight: 400;
@@ -622,7 +623,7 @@ Jobs
   .jobs-center {
     width: 90vw;
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 250px 1fr;
     column-gap: 4rem;
   }
   .btn-container {
@@ -911,12 +912,14 @@ About Page
 Contact Page
 ===============
 */
-.contact-page {
+.contact-page,
+.projects-page {
   display: grid;
   place-items: center;
   padding: 5rem 0;
 }
-.contact-form {
+.contact-form,
+.review-item {
   background: var(--clr-white);
   border-radius: var(--radius);
   text-align: center;
@@ -978,8 +981,16 @@ New Navbar
 }
 
 .header__item {
-  margin-right: 20px;
+  margin-right: 0px;
   position: relative;
+}
+
+.header__item:last-of-type {
+  margin-right: 0;
+}
+
+.header__item:last-of-type a {
+  margin-right: 0;
 }
 
 @media (max-width: 1139px) {
@@ -1012,15 +1023,15 @@ New Navbar
 
 .subnav {
   display: block;
-  min-width: 250px;
+  min-width: 300px;
   padding: 15px;
   border-radius: 5px;
-  border: 1px solid #FFD800;
+  border: 1px solid var(--clr-primary-1);
   margin: 0;
   list-style: none;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 50px 5px #10293d;
-  box-shadow: 0px 0px 50px 5px #10293d;
+  -webkit-box-shadow: 0px 0px 50px 5px var(--clr-grey-1);
+  box-shadow: 0px 0px 50px 5px var(--clr-grey-1);
 }
 
 .subnav li {
@@ -1028,14 +1039,16 @@ New Navbar
 }
 
 .subnav a {
-  color: #696687;
+  color: var(--clr-primary-1);
   font-size: 0.875em;
   line-height: 1.65;
   text-decoration: none;
+  letter-spacing: 0;
 }
 
 .subnav a:hover {
-  color: #FFD800;
+  color: var(--clr-grey-1);
+  box-shadow: none;
 }
 
 .header__item:hover .header__subnav {
@@ -1137,4 +1150,33 @@ New Navbar
   .menuOpened {
     right: 200px;
   }
+}
+
+.logoImage {
+  height: 62px;
+  width: 65px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-info h4 {
+  margin-right: 10px;
+}
+
+.review-item {
+  max-width: 74rem;
+  padding: 40px 30px;
+  margin-bottom: 25px;
+}
+
+.review-data {
+  display: flex;
+  justify-content: center;
+}
+
+.review-data h4:first-of-type {
+  margin-right: 20px;
 }

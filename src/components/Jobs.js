@@ -42,11 +42,13 @@ const Jobs = () => {
       </div>
       <article className="job-info">
         <h3>{name}</h3>
-        <h4>{phone}</h4>
-        <p className={'job-date'}>{title}</p>
-        <Link to={surl}>
+        <div className="contact-info">
+          <h4>{phone}</h4>
+          <Link to={surl}>
             <FaTelegram className={'social-link'}/>
-        </Link>
+          </Link>
+        </div>
+        <p className={'job-date'}>{title}</p>
         <GatsbyImage alt={name} image={picture.gatsbyImageData}/>
       </article>
     </div>

@@ -130,23 +130,22 @@ const Navbar = ({toggleSidebar}) => {
           <StaticImage
             src={'../assets/images/matritsa.png'}
             alt="Нумерология"
-            height={75}
-            width={75}
             placeholder={'tracedSVG'}
             layout={'constrained'}
+            className="logoImage"
           />
         </Link>
 
         <button type={'button'} className={'toggle-btn'} onClick={toggleSidebar}> <FaAlignRight/> </button>
       </div>
-      <div className="nav-links">
+      <ul className="nav-links">
         {buttonsNames}
         {/*{pageLinks.map((link) => {*/}
         {/*  return <Link key={link.id} to={link.url}>*/}
         {/*    {link.text}*/}
         {/*  </Link>*/}
         {/*})}*/}
-      </div>
+      </ul>
     </div>
   </nav>
 }
